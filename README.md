@@ -1,16 +1,15 @@
-<h1 align="center">Desenrolamento de Laço (Loop Unrolling)</h1>
+<h1 align="center">⚡ Desenrolamento de Laço (Loop Unrolling) ⚡</h1>
 
 Técnica de ILP (Instruction Level Paralelism -> Paralelismo em Nível de Instrução) que busca alcançar maiores velocidades de execução de software.
 
 ## Sumário
-  * [ILP]()
-  * [Loop Unrolling]()
-    * [Aplicação]()
-    * [For]()
-    * [While]()
-    * [Lista Encadeada]()
-  * [Por Que Funciona?]()
-  * [Conclusão]()
+  * [ILP](#ilp)
+  * [Loop Unrolling](#loop-unrolling)
+    * [For](#for)
+    * [While](#while)
+    * [Lista Encadeada](#lista-encadeada)
+  * [Por Que Funciona?](#por-que-funciona)
+  * [Conclusão](#conclusão)
 
 ## ILP
 
@@ -131,5 +130,21 @@ if(f == l) {
 
 ## Por que funciona?
 
+Em nível de instrução, o cabeçalho do for se repete toda vez que é feito um loop, ou seja, a comparação para checar se é para encerrar ou continuar a execução do escopo é repetida. Quando utilizamos o loop unrollling, as declarações desse cabeçalho é diminuído em N vezes, no caso do exemplo do for demonstrado anteriormente, é diminuído em 10 vezes.
+
 ## Conclusão
 
+Assim como há prós, há contras:
+
+  ### Prós
+
+  * Velocidade de execução aumentada;
+  * Penalidade de predição de branches é diminuída;
+  * Quando não existe dependência entre os processos, estes podem ser paralelisáveis, é o caso do [exemplo prático]().
+  * Pode haver implementação de modo dinâmico, especialmente quando o tamanho do array não é fixo, 
+
+  ### Contras
+
+  * Aumento do tamanho do programa (o que pode não ser interessante em sistemas embarcados);
+  * Perda de cache em instrução;
+  * Se o processo não for feito de modo dinâmico, o código acaba por ficar menos legível e mais difícil de manutenir;
