@@ -149,4 +149,4 @@ Assim como há prós, há contras:
   * Perda de cache em instrução;
   * Se o processo não for feito de modo dinâmico, o código acaba por ficar menos legível e mais difícil de manutenir;
 
-Apesar dos contras, ainda é possível extrair benefícios para diversas aplicações, sempre tendo em mente o trade-off que existe por trás na hora de tomar a decisão de utilizar a técnica.
+Apesar dos contras, ainda é possível extrair benefícios para diversas aplicações, sempre tendo em mente o trade-off que existe por trás, antes de tomar a decisão da utilização da técnica.
