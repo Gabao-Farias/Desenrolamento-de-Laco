@@ -8,7 +8,7 @@ Técnica de ILP (Instruction Level Paralelism -> Paralelismo em Nível de Instru
     * [For](#for)
     * [While](#while)
     * [Lista Encadeada](#lista-encadeada)
-  * [Colocando em Prática]()
+  * [Colocando em Prática](#colocando-em-prática)
   * [Por Que Funciona?](#por-que-funciona)
   * [Conclusão](#conclusão)
 
@@ -130,8 +130,8 @@ if(f == l) {
 ```
 
 ## Colocando em Prática
-  1. Primeiro faça o download de um compilador C++ (recomendado [Dev-C++]());
-  2. Após a instalação, faça o download do [código fonte]();
+  1. Primeiro faça o download de um compilador C++ (recomendado [Dev-C++](https://sourceforge.net/projects/orwelldevcpp/));
+  2. Após a instalação, faça o download do [código fonte](https://github.com/Gabao-Farias/Desenrolamento-de-Laco/blob/master/teste.cpp);
   3. Abra o Dev-C++ e nele abra o arquivo .cpp baixado;
   4. Clique no ícone compilar & executar;
   5. Nisso um terminal em que aparecerá o tempo de execução de do código não fatorado e do código fatorado (o tempo de execução pode variar dependendo da comfiguração da sua máquina);
@@ -148,7 +148,7 @@ Assim como há prós, há contras:
 
   * Velocidade de execução aumentada;
   * Penalidade de predição de branches é diminuída;
-  * Quando não existe dependência entre os processos, estes podem ser paralelisáveis, é o caso do [exemplo prático]().
+  * Quando não existe dependência entre os processos, estes podem ser paralelisáveis, é o caso do [exemplo prático](#colocando-em-prática).
   * Pode haver implementação de modo dinâmico, especialmente quando o tamanho do array não é fixo, 
 
   ### Contras
