@@ -8,17 +8,18 @@ Técnica de ILP (Instruction Level Paralelism -> Paralelismo em Nível de Instru
     * [For](#for)
     * [While](#while)
     * [Lista Encadeada](#lista-encadeada)
+  * [Colocando em Prática]()
   * [Por Que Funciona?](#por-que-funciona)
   * [Conclusão](#conclusão)
 
 ## ILP
 
-Pararerlismo em nível de instrução é a ideia de parelelizar instruções, ou seja, executar processos simultaneamente no processador. Existem diversas técnicas de ILP, porém aqui será dado o foco para o loop unrolling.
+Paralelismo em nível de instrução é a ideia de paralelizar instruções, ou seja, executar processos simultaneamente no processador. Existem diversas técnicas de ILP, porém aqui será dado o foco para o loop unrolling.
 
 ## Loop Unrolling
 
 O loop unrolling é uma das várias técnicas de ILP que visa maior velocidade de execução de código e redução de consumo, através do desenrolamento de iterações. Matematicamente, podemos dizer que uma iteração M pode ser desenrolada N vezes, ou seja, também pode se dizer que é uma iteração M/N. Além disso pode ser aplicada:
-  * Estaticamente: onde o programador implementa a técnica pessoalmente ou "na unha" como chamam.
+  * Estaticamente: onde o programador implementa a técnica por sí próprio ou "na unha" como chamam.
 
   * Dinamicamente: de maneira automatizada, utilizando compiladores JIT (operam em tempo de execução). Nesse caso, o cenário ideal para aplicação, é quando temos um array que tem um tamanho desconhecido antes da compilação ou que pode ser definido/alterado durante execução.
 
@@ -127,6 +128,13 @@ if(f == l) {
   count--;
 }
 ```
+
+## Colocando em Prática
+  1. Primeiro faça o download de um compilador C++ (recomendado [Dev-C++]());
+  2. Após a instalação, faça o download do [código fonte]();
+  3. Abra o Dev-C++ e nele abra o arquivo .cpp baixado;
+  4. Clique no ícone compilar & executar;
+  5. Nisso um terminal em que aparecerá o tempo de execução de do código não fatorado e do código fatorado (o tempo de execução pode variar dependendo da comfiguração da sua máquina);
 
 ## Por que funciona?
 
