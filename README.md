@@ -91,7 +91,7 @@ for(i<1000){
 }
 ```
 
-### Lista Encadeada
+### Lista Encadeada ⚠️ (Precisa ser implementada no exemplo ainda!)
 
 Em uma lista encadeada, percorremos os nós pelo ponteiros que apontam para o próximo nó, [artigo base]() cita uma solução onde é criado dois fluxos de iteração, ambos partindo das extremidades da lista. Porém, para isso acontecer, é preciso alterar a estrutura de dados do nó, para armazenar além da chave e do próximo, incluir o anterior também (é esse que faz com que seja possível vir do final para o início), de forma que passe a ser uma lista dupalmente encadeada.
 
